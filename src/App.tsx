@@ -7,7 +7,6 @@ import { AnswerObject } from "./models/AnswerObject";
 import { addUserAnswer, changeIndex ,resetUserAnswer} from "./store/triviaSlice";
 import Buttons from "./components/Buttuons";
 import Start from "./components/Start";
-
 const TOTAL_QUESTIONS = 5;
 
 function App() {

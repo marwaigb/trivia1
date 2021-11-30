@@ -6,14 +6,14 @@ import reportWebVitals from './reportWebVitals';
 import store from './store';
 import { Provider } from 'react-redux';
 import { useAppDispatch } from './store/hooks';
-import { fetchTodoCollectionAsync } from './store/triviaSlice';
+import { fetchTriviaCollectionAsync } from './store/triviaSlice';
 
 const AppWithRouting: React.FC = () => {
 
 const dispatch = useAppDispatch();
 
 	useEffect(() => {
-		dispatch(fetchTodoCollectionAsync());
+		dispatch(fetchTriviaCollectionAsync());
 	}, [dispatch]);
 
    return (

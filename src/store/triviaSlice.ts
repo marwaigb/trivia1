@@ -3,8 +3,8 @@ import { IQuestion } from "../models/IQuestion";
 import { AnswerObject } from "../models/AnswerObject";
 
 
-export const fetchTodoCollectionAsync = createAsyncThunk(
-	'todo/fetchCollection',
+export const fetchTriviaCollectionAsync = createAsyncThunk(
+	'trivia/fetchCollection',
 	async () => {
 		const response = await fetch('/questions.json');
 		return await response.json();
@@ -39,7 +39,7 @@ export const triviaSlice = createSlice({
     extraReducers: (builder) => {
         builder
             .addCase(
-                fetchTodoCollectionAsync.fulfilled,
+                fetchTriviaCollectionAsync.fulfilled,
                 (state, action: PayloadAction<IQuestion[]>) => {
                     state.items = action.payload;
                 }
