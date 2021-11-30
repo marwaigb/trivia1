@@ -1,13 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import store from './store';
+import { Provider } from 'react-redux';
+import { useAppDispatch } from './store/hooks';
+import { fetchTodoCollectionAsync } from './store/triviaSlice';
+
+const AppWithRouting: React.FC = () => {
+
+const dispatch = useAppDispatch();
+
+	useEffect(() => {
+		dispatch(fetchTodoCollectionAsync());
+	}, [dispatch]);
+
+   return (
+     <App/>
+   );
+};
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <AppWithRouting />
+  </Provider>,
   document.getElementById('root')
 );
 

@@ -1,0 +1,8 @@
+[
+    { "question": "Who was the first woman to go to space?", "answer1": "Valentina Tereshkova", "answer2": "Sally Ride","answer3": "Sunita Williams","answer4": "Liu Yang", "correct": "Valentina Tereshkova"},
+    { "question": "Anthropology is the study of", "answer1": "Science", "answer2": "Psychology","answer3": "Literature","answer4": "Humanity", "correct": "Humanity" },
+    {"question": "The working languages of the UNESCO is/are", "answer1": "French only", "answer2": "English only","answer3": "English and French","answer4": "English, French and Russian", "correct": "English, French and Russian"},
+    {"question": "‘World Cancer Day’ is observed on", "answer1": "19th February", "answer2": "4th February","answer3": "12th February","answer4": "17th February", "correct": "4th February"},
+    {"question": "‘Who invented Mobile phone?", "answer1": "Graham Bell", "answer2": "Martin Cooper","answer3": "Larry Page","answer4": "Edison", "correct": "Martin Cooper"}
+
+]

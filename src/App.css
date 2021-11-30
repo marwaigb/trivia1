@@ -1,4 +1,8 @@
+
 .App {
+  display: flex;
+  justify-content: center;
+  color: white;
   text-align: center;
 }
 
@@ -36,3 +40,9 @@
     transform: rotate(360deg);
   }
 }
+
+body{
+  background-image: url('./images/leaves.jpg');
+}
+
+
